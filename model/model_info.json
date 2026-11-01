@@ -1,0 +1,217 @@
+{
+  "dataset": "Predict Students' Dropout and Academic Success (UCI 697)",
+  "target": "Target",
+  "classes": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "features": [
+    "Marital status",
+    "Application mode",
+    "Application order",
+    "Course",
+    "Daytime/evening attendance",
+    "Previous qualification",
+    "Previous qualification (grade)",
+    "Nacionality",
+    "Mother's qualification",
+    "Father's qualification",
+    "Mother's occupation",
+    "Father's occupation",
+    "Admission grade",
+    "Displaced",
+    "Educational special needs",
+    "Debtor",
+    "Tuition fees up to date",
+    "Gender",
+    "Scholarship holder",
+    "Age at enrollment",
+    "International",
+    "Curricular units 1st sem (credited)",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (evaluations)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)",
+    "Curricular units 1st sem (without evaluations)",
+    "Curricular units 2nd sem (credited)",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 2nd sem (approved)",
+    "Curricular units 2nd sem (grade)",
+    "Curricular units 2nd sem (without evaluations)",
+    "Unemployment rate",
+    "Inflation rate",
+    "GDP"
+  ],
+  "nominal_features": [
+    "Marital status",
+    "Application mode",
+    "Course",
+    "Previous qualification",
+    "Nacionality",
+    "Mother's qualification",
+    "Father's qualification",
+    "Mother's occupation",
+    "Father's occupation"
+  ],
+  "random_state": 26,
+  "test_size": 0.2,
+  "models": {
+    "Logistic Regression": "logistic_regression.joblib",
+    "Decision Tree": "decision_tree.joblib",
+    "KNN": "knn.joblib",
+    "Naive Bayes": "naive_bayes.joblib",
+    "Support Vector Machine": "support_vector_machine.joblib"
+  },
+  "best_params": {
+    "Logistic Regression": {
+      "C": 5.0
+    },
+    "Decision Tree": {
+      "criterion": "gini",
+      "max_depth": 6,
+      "min_samples_leaf": 1
+    },
+    "KNN": {
+      "n_neighbors": 5,
+      "weights": "distance"
+    },
+    "Naive Bayes": {
+      "var_smoothing": 0.01
+    },
+    "Support Vector Machine": {
+      "C": 3,
+      "gamma": "scale"
+    }
+  },
+  "test_metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.7763,
+      "AUC": 0.8859,
+      "Precision": 0.7317,
+      "Recall": 0.6957,
+      "F1": 0.7075,
+      "MCC": 0.6294
+    },
+    "Decision Tree": {
+      "Accuracy": 0.7322,
+      "AUC": 0.841,
+      "Precision": 0.6877,
+      "Recall": 0.6589,
+      "F1": 0.6671,
+      "MCC": 0.561
+    },
+    "KNN": {
+      "Accuracy": 0.7186,
+      "AUC": 0.8089,
+      "Precision": 0.6676,
+      "Recall": 0.623,
+      "F1": 0.6344,
+      "MCC": 0.5316
+    },
+    "Naive Bayes": {
+      "Accuracy": 0.6034,
+      "AUC": 0.7751,
+      "Precision": 0.5869,
+      "Recall": 0.5778,
+      "F1": 0.5686,
+      "MCC": 0.393
+    },
+    "Support Vector Machine": {
+      "Accuracy": 0.7842,
+      "AUC": 0.874,
+      "Precision": 0.7388,
+      "Recall": 0.6976,
+      "F1": 0.7099,
+      "MCC": 0.6425
+    }
+  },
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        209,
+        33,
+        42
+      ],
+      [
+        30,
+        67,
+        62
+      ],
+      [
+        13,
+        18,
+        411
+      ]
+    ],
+    "Decision Tree": [
+      [
+        185,
+        54,
+        45
+      ],
+      [
+        20,
+        69,
+        70
+      ],
+      [
+        10,
+        38,
+        394
+      ]
+    ],
+    "KNN": [
+      [
+        185,
+        41,
+        58
+      ],
+      [
+        18,
+        49,
+        92
+      ],
+      [
+        17,
+        23,
+        402
+      ]
+    ],
+    "Naive Bayes": [
+      [
+        155,
+        100,
+        29
+      ],
+      [
+        16,
+        82,
+        61
+      ],
+      [
+        52,
+        93,
+        297
+      ]
+    ],
+    "Support Vector Machine": [
+      [
+        217,
+        31,
+        36
+      ],
+      [
+        27,
+        62,
+        70
+      ],
+      [
+        11,
+        16,
+        415
+      ]
+    ]
+  }
+}
