@@ -4,7 +4,7 @@ M.Tech (AIML), BITS WILP – Machine Learning, Assignment 2
 Murali Kulkarni
 
 - **GitHub repo:** https://github.com/muralikulkarni-design/MLAsg-2
-- **Live Streamlit app:** _<add link after deploying on Streamlit Community Cloud>_
+- **Live Streamlit app:** https://mlasg-2-2mvyecevnszepitvjzps7m.streamlit.app/
 
 ---
 
